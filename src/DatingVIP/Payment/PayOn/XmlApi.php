@@ -650,7 +650,7 @@ class XmlApi
         $this->curl->setTimeout(self::CURL_TIMEOUT);
 
         try {
-            $response = $this->curl->post($url, ['load' => $this->request, []]);
+            $response = $this->curl->post( $url, 'load='.urlencode($this->request) );
             $this->response = $response->getData();
         } catch (Exception $e) {
             return false;
