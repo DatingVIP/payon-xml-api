@@ -778,6 +778,7 @@ class XmlApi
 
         self::addChildIfNotEmpty( $acc, 'Verification', $this->transactionParams->getAccountVerif() );
         self::addChildIfNotEmpty( $acc, 'Bank',         $this->transactionParams->getAccountBank() );
+        self::addChildIfNotEmpty( $acc, 'BankName',     $this->transactionParams->getAccountBankName() );
         self::addChildIfNotEmpty( $acc, 'Country',      $this->transactionParams->getAccountCountry() );
         self::addChildIfNotEmpty( $acc, 'Id',           $this->transactionParams->getAccountId() );
         self::addChildIfNotEmpty( $acc, 'Password',     $this->transactionParams->getAccountPassword() );
