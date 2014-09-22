@@ -765,6 +765,8 @@ class XmlApi
         self::addChildIfNotEmpty( $acc, 'Holder',       $this->transactionParams->getAccountHolder() );
         self::addChildIfNotEmpty( $acc, 'Number',       $this->transactionParams->getAccountNumber() );
         self::addChildIfNotEmpty( $acc, 'Brand',        $this->transactionParams->getAccountBrand() );
+        self::addChildIfNotEmpty( $acc, 'Bic',          $this->transactionParams->getAccountBic() );
+        self::addChildIfNotEmpty( $acc, 'Iban',         $this->transactionParams->getAccountIban() );
 
         if( $this->transactionParams->hasExpireDate() ) {
             $exp = $acc->addChild( 'Expiry' );

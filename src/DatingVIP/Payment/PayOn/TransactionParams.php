@@ -49,6 +49,8 @@ class TransactionParams
 
     private $accountBank        = '';
     private $accountCountry     = '';
+    private $accountBic         = '';
+    private $accountIban        = '';
 
     // acc. tagged
 
@@ -179,6 +181,26 @@ class TransactionParams
     public function getAccountBank()
     {
         return $this->accountBank;
+    }
+
+    public function setAccountBic($accountBic)
+    {
+        $this->accountBic = $accountBic;
+    }
+
+    public function getAccountBic()
+    {
+        return $this->accountBic;
+    }
+
+    public function setAccountIban($accountIban)
+    {
+        $this->accountIban = $accountIban;
+    }
+
+    public function getAccountIban()
+    {
+        return $this->accountIban;
     }
 
     public function setAccountBrand($accountBrand)
