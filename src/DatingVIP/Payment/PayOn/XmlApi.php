@@ -510,6 +510,16 @@ class XmlApi
     }
 
     /**
+     * Set response mode (self::SYNC_REQUEST | self::ASYNC_REQUEST)
+     *
+     * @param $responseMode
+     */
+	public function setResponseMode($responseMode)
+    {
+        $this->responseMode = $responseMode;
+    }
+
+    /**
      * Returns response in desired format
      *
      * @param string $format xml or json
