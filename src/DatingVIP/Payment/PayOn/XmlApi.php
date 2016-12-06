@@ -714,6 +714,7 @@ class XmlApi
         self::addChildIfNotEmpty( $id, 'ReferenceID',  $this->transactionParams->getReferenceId() );
         self::addChildIfNotEmpty( $id, 'ShopperID',  $this->transactionParams->getShopperId());
         self::addChildIfNotEmpty( $id, 'InvoiceID',  $this->transactionParams->getInvoiceId() );
+        self::addChildIfNotEmpty( $id, 'OrderID',  $this->transactionParams->getOrderId() );
 
         if( $id->count()==0 ) { unset($transaction->Identification); }
 

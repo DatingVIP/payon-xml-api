@@ -20,6 +20,7 @@ class TransactionParams
     private $referenceId        = '';       // for subsequent transactions
     private $shopperId          = '';       // defined by merchant
     private $invoiceId          = '';       // defined by merchant
+    private $orderId            = '';       // order id - optional
 
     // payment
 
@@ -582,6 +583,16 @@ class TransactionParams
     public function getShopperId()
     {
         return $this->shopperId;
+    }
+
+    public function setOrderId($orderId)
+    {
+        $this->orderId = $orderId;
+    }
+
+    public function getOrderId()
+    {
+        return $this->orderId;
     }
 
     public function setTransactionId($transactionId)
