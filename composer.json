@@ -4,7 +4,7 @@
     "description": "PHP Api library for PayOn XML api",
     "keywords": ["payon","api","payment"],
     "homepage": "https://github.com/DatingVIP/payon-xml-api",
-    "license": "LGPLv3",
+    "license": "LGPL-3.0-or-later",
     "authors": [
         {
             "name": "Boldizsar Bednarik",
