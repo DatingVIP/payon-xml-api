@@ -65,7 +65,7 @@ class XmlApi
     /**
      * @var TransactionParams
      */
-    private $transactionParams;
+    protected $transactionParams;
 
     // query values
 
@@ -653,7 +653,7 @@ class XmlApi
      *
      * @return bool returns false if there is a curl error
      */
-    private function sendRequest($url)
+    protected function sendRequest($url)
     {
         $this->curl = new cURL([ CURLOPT_USERAGENT   =>  self::CURL_AGENT ]);
         $this->curl->setHeader('Content-Type' , 'application/x-www-form-urlencoded;charset=UTF-8');
