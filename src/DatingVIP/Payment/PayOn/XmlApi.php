@@ -54,8 +54,8 @@ class XmlApi
 
     // request & response
 
-    private $request;
-    private $response;
+    protected $request;
+    protected $response;
 
     // transaction values
 
