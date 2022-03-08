@@ -680,7 +680,7 @@ class XmlApi
     {
         $header = $root->addChild('Header');
         $security = $header->addChild('Security');
-        $security->addAttribute( 'sender', $this->sender );
+        $security->addAttribute( 'sender', $this->sender ?? '');
         return $header;
     }
 
@@ -696,15 +696,15 @@ class XmlApi
         // add transaction
 
         $transaction = $root->addChild('Transaction');
-        $transaction->addAttribute( 'mode',     $this->transactionMode );
-        $transaction->addAttribute( 'response', $this->responseMode );
-        $transaction->addAttribute( 'channel',  $this->channel );
+        $transaction->addAttribute( 'mode',     $this->transactionMode ?? '');
+        $transaction->addAttribute( 'response', $this->responseMode ?? '');
+        $transaction->addAttribute( 'channel',  $this->channel ?? '');
 
         // add user
 
         $user = $transaction->addChild('User');
-        $user->addAttribute( 'login', $this->userId );
-        $user->addAttribute( 'pwd',  $this->userPass );
+        $user->addAttribute( 'login', $this->userId ?? '');
+        $user->addAttribute( 'pwd',  $this->userPass ?? '');
 
         // add indentification
 
