@@ -19,11 +19,11 @@ use SimpleXMLElement;
 
 class XmlApi
 {
-    const TEST_SERVER_URL_TRANSACTION       = 'https://test.ctpe.net/payment/ctpe';
-    const LIVE_SERVER_URL_TRANSACTION       = 'https://ctpe.io/payment/ctpe';
+    const TEST_SERVER_URL_TRANSACTION       = 'https://eu-test.ctpe.io/payment/ctpe';
+    const LIVE_SERVER_URL_TRANSACTION       = 'https://eu-prod.ctpe.io/payment/ctpe';
 
-    const TEST_SERVER_URL_QUERY             = 'https://test.ctpe.io/payment/query';
-    const LIVE_SERVER_URL_QUERY             = 'https://ctpe.io/payment/query';
+    const TEST_SERVER_URL_QUERY             = 'https://eu-test.ctpe.io/payment/query';
+    const LIVE_SERVER_URL_QUERY             = 'https://eu-prod.ctpe.io/payment/query';
 
     const API_VERSION                       = '1.0';
     const CURL_AGENT                        = 'php ctpepost';
